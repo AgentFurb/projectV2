@@ -1,6 +1,6 @@
-<footer class="footer mt-auto py-3">
+<footer class="footer text-center py-3">
   <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
+    <span class="text-muted">Copyright © 2019 Delta Space</span>
   </div>
 </footer>
 
