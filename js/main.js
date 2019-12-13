@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $("#launch").click(function(){
+      $(".main-page").hide();
+      $(".sec2").hide();
+      $(".graph-page").hide();
+      $(".check-page").show();
+    });
+    $("#check").click(function(){
+        $(".main-page").hide();
+        $(".sec2").hide();
+        $(".graph-page").show();
+        $(".check-page").hide();
+    });
+    $("#reset").click(function(){
+        $(".main-page").show();
+        $(".sec2").show();
+        $(".graph-page").hide();
+        $(".check-page").hide();
+    });
+  });

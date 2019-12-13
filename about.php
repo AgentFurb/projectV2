@@ -5,7 +5,32 @@
     <title>Project V2 - Delta Space</title>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,96C640,117,800,203,960,213.3C1120,224,1280,160,1360,128L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+<div class="about-container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+    <a class="navbar-brand" href="index.php">
+        <img src="assets/img/ds-logo-light.png" width="100" height="100" class="d-inline-block align-middle" alt="">
+        Delta Space
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link text-center" href="about.php">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-center" href="about.php">Over ons</a>
+        </li>
+    </div>
+    <img src="assets/img/stars.png" class="stars" alt="">
+</nav>
+  <div class="row row-about">
+    <div class="col-team col-6 col-md-3">Teamleden</div>
+    <div class="col-about col-md-8">Over Project V2</div>
+  </div>
+</div>
     
     
 <?php include 'inc/footer.php';?>

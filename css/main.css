@@ -1,3 +1,4 @@
+/* Imports Fonts from the assets map */
 @font-face {
     font-family: abang;
     src: url(../assets/fonts/Abang.otf);
@@ -27,12 +28,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.col {  
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+/* Cursor change on hoover, only on the launch buttons */
+#launch, #check, #graph {
+    cursor: pointer;
+}
+
 /* Homepage */
 .main-con {
     padding: 0px !important;
     margin: 0 !important;
     position: relative;
-    background: #ff319c url(../assets/img/background-purple.png);
+    background: #2D1674 url(../assets/img/background-purple.png);
     background-size: cover;
     width: 100%;
     height: 75vh;
@@ -71,6 +85,7 @@ section.sec2 {
     border-radius: 50px;
     margin: 0px 30px 0px 30px !important;
     width: 350px !important;
+    letter-spacing: 5px;
 }
 
 .stars {
@@ -97,9 +112,87 @@ section.sec2 {
     color: #FBF1EF !important;
     font-family: raleway-sb;
     font-size: 30px;
+    letter-spacing: 5px;
 
     background-color: #B175FF;
     border-radius: 50px;
-    margin: 0px 30px 0px 30px !important;
+    margin: 0px 30px 0px 30px;
     width: 350px !important;
+}
+/* About page */
+.about-container {
+    background-image: url(../assets/img/background-purple.png);
+    background-size: cover;
+}
+
+.row-about {
+    height: 100vh;
+    padding: 0px 75px 75px 75px !important;
+    margin: 0px !important;
+    position: relative;
+}
+
+.col-team, .col-about {
+    background-color: rgba(251, 241, 239, 0.3);
+    padding: 25px;
+    border-radius: 25px;
+
+    color: #FBF1EF;
+    font-family: raleway-sb;
+    font-size: 40px;
+}
+
+.col-team {
+    margin-right: 50px;
+}
+
+.col-about {
+    margin-left: 95px !important;
+}
+/* Check page section */
+.check-con {
+    padding: 0px !important;
+    margin: 0 !important;
+    position: relative;
+    background: #2D1674 url(../assets/img/background-purple.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.check-window {
+    background-color: #000000;
+    border: 5px solid #B175FF;
+    border-radius: 30px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.check-list ul {
+    padding-left: 5px;
+}
+
+.check-list li {
+    font-family: orbitron;
+    color: #29FE10;
+    list-style: none;
+    font-size: 22px;
+}
+
+.check-btn {
+    color: #FBF1EF !important;
+    font-family: raleway-sb;
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    background-color: #B175FF;
+    border-radius: 50px;
+    margin: 30px 30px 0px 30px;
+    width: 350px !important;
+
+    position: absolute;
+    left: 208px;
 }
