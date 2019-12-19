@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-        <a class="nav-link text-center" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-center" href="index.php">Home</a>
         </li>
         <li class="nav-item">
         <a class="nav-link text-center" href="about.php">Over ons</a>
@@ -80,6 +80,28 @@
 <!-- Graph page section -->
 <section class="graph-page" style="display: none;">
     <div class="container-fluid graph-con">
+    <div class="row chart-up">
+        <div class="col col-acceleration">
+        <canvas id="myChart" width="100" height="100"></canvas>
+        </div>
+        <div class="col col-position">
+        <canvas id="myChart2" width="100" height="100"></canvas>
+        </div>
+    </div>
+    <div class="row chart-down">
+        <div class="col col-temp text-center">
+            <h1>Temperatuur</h1>
+            <h2>22 °C</h2>
+        </div>
+        <div class="col col-pressure text-center">
+            <h1>Luchtdruk</h1>
+            <h2>1 Pa</h2>
+        </div>
+        <div class="col col-humidity text-center">
+            <h1>Luchtvochtigheid</h1>
+            <h2>79 %</h2>
+        </div>
+    </div>
         <button id="reset">Reset</button>
     </div>
 </section>

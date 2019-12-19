@@ -196,3 +196,10 @@ section.sec2 {
     position: absolute;
     left: 208px;
 }
+/* grafieken */
+.chart-up {
+    padding: 5%;
+}
+.chart-down {
+    padding: 5%;
+}
