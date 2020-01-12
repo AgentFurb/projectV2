@@ -1,4 +1,4 @@
-<footer class="footer text-center py-3">
+<footer class="footer text-center py-3 bg-transparent">
   <div class="container">
     <span class="text-muted">Copyright © 2019 Delta Space</span>
   </div>

@@ -35,7 +35,7 @@
 </nav>
 <img src="assets/img/v2-logo.png" class="v2-logo" alt="Project V2 Logo">
 <img src="assets/img/v2-rocket.png" class="rocket-img" alt="Rocket Project V2">
-<a class="launch-btn text-center" id="launch">Launch</a>
+<a class="launch-btn text-center" id="launch" data-toggle="tooltip" data-placement="top" title="Initiate Launch Sequence">Start</a>
 </section>
 <!-- Bottom part of the main section -->
 <section class="sec2">   
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="col">
-
+            <img src="assets/img/v2-rocket.png" id="rocket" alt="Rocket Project V2">
         </div>
     </div>
         
@@ -82,10 +82,10 @@
     <div class="container-fluid graph-con">
     <div class="row chart-up">
         <div class="col col-acceleration">
-        <canvas id="myChart" width="100" height="100"></canvas>
+        <canvas id="myChart"></canvas>
         </div>
         <div class="col col-position">
-        <canvas id="myChart2" width="100" height="100"></canvas>
+        <canvas id="myChart2"></canvas>
         </div>
     </div>
     <div class="row chart-down">
@@ -102,7 +102,7 @@
             <h2>79 %</h2>
         </div>
     </div>
-        <button id="reset">Reset</button>
+        <button id="reset" onClick="window.location.reload();">Reset</button>
     </div>
 </section>
 <!-- Includes footer & Javascript files -->

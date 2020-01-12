@@ -9,7 +9,11 @@ $(document).ready(function(){
       $(".main-page").hide();
       $(".sec2").hide();
       $(".graph-page").show();
-      $(".check-page").hide();
+    //   $(".check-page").hide();
+      setTimeout(function() {
+        $('.check-page').hide();
+    }, 6000); // <-- time in milliseconds
+    $('#rocket').addClass('rocket-ani');
   });
   $("#reset").click(function(){
       $(".main-page").show();

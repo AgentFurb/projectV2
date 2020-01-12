@@ -1,4 +1,4 @@
-/* Imports Fonts from the assets map */
+/* Imports Fonts from the assets folder */
 @font-face {
     font-family: abang;
     src: url(../assets/fonts/Abang.otf);
@@ -27,6 +27,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-y: hidden; /*hide vertical scrollbar*/
 }
 
 .col {  
@@ -113,6 +114,7 @@ section.sec2 {
     font-family: raleway-sb;
     font-size: 30px;
     letter-spacing: 5px;
+    padding: .5rem;
 
     background-color: #B175FF;
     border-radius: 50px;
@@ -126,7 +128,7 @@ section.sec2 {
 }
 
 .row-about {
-    height: 100vh;
+    height: 86.9vh;
     padding: 0px 75px 75px 75px !important;
     margin: 0px !important;
     position: relative;
@@ -144,6 +146,36 @@ section.sec2 {
 
 .col-team {
     margin-right: 50px;
+}
+
+.about-title {
+    color: #FBF1EF;
+    font-family: raleway-sb;
+    font-size: 40px;
+}
+
+.team-members {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profile {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 30px;
+    color: #FBF1EF;
+    font-family: raleway-sb;
+}
+
+.role {
+    font-size: 20px;
+    color: #FBF1EF;
+    font-family: raleway-sb;
 }
 
 .col-about {
@@ -196,10 +228,36 @@ section.sec2 {
     position: absolute;
     left: 208px;
 }
-/* grafieken */
+
+#rocket {
+    position: absolute;
+    transform: rotate(-48deg);
+    bottom: 70px;
+    right: 350px;
+}
+/* Rocket CSS animation */
+.rocket-ani {
+    animation: fly 3s 5s ease-in;
+  }
+  
+  @keyframes fly {
+    0% {
+      bottom: 70px;   
+    }
+    100% {
+      bottom: 100%;
+    }
+  }
+/* graphs */
 .chart-up {
     padding: 5%;
 }
 .chart-down {
     padding: 5%;
+}
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 1px;
+    left: 85vh;
 }

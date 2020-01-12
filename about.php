@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link text-center" href="about.php">Home</a>
+            <a class="nav-link text-center" href="index.php">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link text-center" href="about.php">Over ons</a>
@@ -27,8 +27,27 @@
     <img src="assets/img/stars.png" class="stars" alt="">
 </nav>
   <div class="row row-about">
-    <div class="col-team col-6 col-md-3">Teamleden</div>
-    <div class="col-about col-md-8">Over Project V2</div>
+    <div class="col-team col-6 col-md-3 text-center">
+        <h1 class="about-title">Teamleden</h1>
+        <div class="team-members">
+            <img class="profile" src="assets/img/sam-hendriks.jpg" alt="Profiel afbeelding Sam Hendriks">
+            <h1 class="name">Sam Hendriks</h1>
+            <h2 class="role">Teamleider - Application Developer</h2>
+        </div>
+        <div class="team-members">
+            <img class="profile" src="assets/img/mark-flohr.jpg" alt="Profiel afbeelding Mark Flohr">
+            <h1 class="name">Mark Flohr</h1>
+            <h2 class="role">Embedded Systems Developer</h2>
+        </div>
+        <div class="team-members">
+            <img class="profile" src="assets/img/ferdy-hommeles.jpg" alt="Profiel afbeelding Ferdy Hommeles">
+            <h1 class="name">Ferdy Hommeles</h1>
+            <h2 class="role">Design - Webdeveloper</h2>
+        </div>
+    </div>
+    <div class="col-about col-md-8">
+        <h1 class="about-title">Over Project V2</h1>
+    </div>
   </div>
 </div>
     
