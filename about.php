@@ -47,6 +47,7 @@
     </div>
     <div class="col-about col-md-8">
         <h1 class="about-title">Over Project V2</h1>
+        <p>In dit project word er een raket gemaakt met daarin een aantal verschillende sensoren die aangesloten zijn aan een Arduino bordje. Dit Arduino bordje is met een Bluetooth module verbonden met een Raspberry Pi, deze ontvangt de data van de Sensoren en laat deze informatie zien op een website die gehost word op de Raspberry Pi.</p>
     </div>
   </div>
 </div>

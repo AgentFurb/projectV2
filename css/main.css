@@ -27,7 +27,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-y: hidden; /*hide vertical scrollbar*/
+    overflow-y: hidden; /* hide vertical scrollbar */
 }
 
 .col {  
@@ -114,12 +114,22 @@ section.sec2 {
     font-family: raleway-sb;
     font-size: 30px;
     letter-spacing: 5px;
-    padding: .5rem;
+    /* padding: .5rem; */
 
     background-color: #B175FF;
     border-radius: 50px;
     margin: 0px 30px 0px 30px;
     width: 350px !important;
+}
+
+.launch-subtitle {
+    position: absolute;
+    bottom: -50px;
+    left: 200px;
+    color: #2D1674;
+    font-family: raleway-sb;
+    letter-spacing: 1px;
+
 }
 /* About page */
 .about-container {
@@ -134,6 +144,12 @@ section.sec2 {
     position: relative;
 }
 
+.col-about p{
+    color: #FBF1EF;
+    font-family: raleway-sb;
+    font-size: 40px;
+    padding-top: 50px;
+}
 .col-team, .col-about {
     background-color: rgba(251, 241, 239, 0.3);
     padding: 25px;
@@ -196,7 +212,8 @@ section.sec2 {
     background-color: #000000;
     border: 5px solid #B175FF;
     border-radius: 30px;
-    width: 50%;
+    width: 66%;
+    height: 666px;
     margin: 0 auto;
     margin-top: 100px;
     padding: 10px;
@@ -207,7 +224,7 @@ section.sec2 {
     padding-left: 5px;
 }
 
-.check-list li {
+.check-list {
     font-family: orbitron;
     color: #29FE10;
     list-style: none;
@@ -226,7 +243,7 @@ section.sec2 {
     width: 350px !important;
 
     position: absolute;
-    left: 208px;
+    left: 135px;
 }
 
 #rocket {
@@ -237,7 +254,7 @@ section.sec2 {
 }
 /* Rocket CSS animation */
 .rocket-ani {
-    animation: fly 3s 5s ease-in;
+    animation: fly 3s .5s ease-in;
   }
   
   @keyframes fly {
@@ -254,6 +271,22 @@ section.sec2 {
 }
 .chart-down {
     padding: 5%;
+}
+
+.col-temp, .col-pressure, .col-humidity {
+    font-family: raleway-sb;
+    color: #2D1674;
+}
+
+#reset {
+    color: #FBF1EF;
+    background-color: #B175FF;
+    border-radius: 50px;
+    border-color: #B175FF;
+    font-family: raleway-sb;
+    font-size: 20px;
+    letter-spacing: 5px;
+    width: 250px
 }
 /* Footer */
 .footer {

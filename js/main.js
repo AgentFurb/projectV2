@@ -1,3 +1,4 @@
+// Hide and show the different section of the website.
 $(document).ready(function(){
   $("#launch").click(function(){
     $(".main-page").hide();
@@ -9,11 +10,11 @@ $(document).ready(function(){
       $(".main-page").hide();
       $(".sec2").hide();
       $(".graph-page").show();
-    //   $(".check-page").hide();
-      setTimeout(function() {
-        $('.check-page').hide();
-    }, 6000); // <-- time in milliseconds
-    $('#rocket').addClass('rocket-ani');
+    //   Wait 3.3 seconds before showing the graph section so you can see the animation
+        setTimeout(function() {
+          $('.check-page').hide();
+        }, 3300);
+      $('#rocket').addClass('rocket-ani');
   });
   $("#reset").click(function(){
       $(".main-page").show();
@@ -22,32 +23,33 @@ $(document).ready(function(){
       $(".check-page").hide();
   });
 });
+// Disable launch button for 25s, so it can check every module
+// $(document).ready(function(){
+//     $("#launch").click(function(){
+//         $('#check').prop('disabled', true);
+//         setTimeout(function() {
+//             $('#check').prop('disabled', false);
+//         }, 25000);
+//     });
+// });
 
+// Add 2 line charts with static data
 $(document).ready(function(){
+// Graph for acceleration
   var ctx = $('#myChart');
 
   var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['1s', '2s', '3s', '4s', '5s', '6s'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Acceleratie in m/s',
+            data: [0, 19, 40, 37, 14, 0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(177,117,255, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(45,22,116, 1)',
             ],
             borderWidth: 1
         }]
@@ -62,31 +64,21 @@ $(document).ready(function(){
         }
     }
   });
-
+//   Graph for postion
   var ctx = $('#myChart2');
 
   var myChart2 = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['10', '20', '30', '40', '50', '60'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Positie',
+            data: [0, 19, 3, 5, 2, 0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(177,117,255, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(45,22,116, 1)',
             ],
             borderWidth: 1
         }]
@@ -101,4 +93,17 @@ $(document).ready(function(){
         }
     }
   });
+});
+
+// TypeWrinting animation on the check section using typewriting.min.js from github.com/eddiewentw/TypeWriting.js
+$(document).ready(function(){
+    $("#launch").click(function(){
+        const typeWriting = new TypeWriting({
+            targetElement   : document.getElementsByClassName('check-list')[0],
+            inputString     : 'connecting...<br/>bluetooth connection established<br/><br/>loading modules...<br/>modules loaded<br/><br/>checking temperatuurmeter...<br/>online<br/>checking barometer...<br/>online<br/>checking accelerometer...<br/>online<br/>checking gyroscoop…<br/>online<br/><br/>rocket is operational<br/>ready for launch...',
+            typingInterval  : 80,
+            blinkInterval   : '1s',
+            cursorColor     : '#29FE10',
+        }, () => console.log('END'));
+    });
 });

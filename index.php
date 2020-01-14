@@ -35,6 +35,7 @@
 </nav>
 <img src="assets/img/v2-logo.png" class="v2-logo" alt="Project V2 Logo">
 <img src="assets/img/v2-rocket.png" class="rocket-img" alt="Rocket Project V2">
+<p class="launch-subtitle">Initiate Launch Sequence</p>
 <a class="launch-btn text-center" id="launch" data-toggle="tooltip" data-placement="top" title="Initiate Launch Sequence">Start</a>
 </section>
 <!-- Bottom part of the main section -->
@@ -102,7 +103,7 @@
             <h2>79 %</h2>
         </div>
     </div>
-        <button id="reset" onClick="window.location.reload();">Reset</button>
+        <button id="reset" class="btn btn-primary" onClick="window.location.reload();">Reset</button>
     </div>
 </section>
 <!-- Includes footer & Javascript files -->
